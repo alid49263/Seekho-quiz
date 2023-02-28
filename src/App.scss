@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #461a42;
+  .sidebar{
+    width: 20%;
+    height: 100%
+  }
+  .content{
+    width: 80%;
+    height: 100%;
+  }
+}

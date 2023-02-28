@@ -1,0 +1,27 @@
+.sidebarContainer{
+    padding: 30px;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #fff;
+    .reviewHeading{
+        font-weight: 600;
+    }
+    .answers{
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 20px;
+        .answer{
+            margin-bottom: 10px;
+        }
+        .answered{
+            color: #006EFA;
+            font-weight: 600;
+        }
+        .skipped{
+            font-weight: 500;
+            font-style: italic;
+            color: #F28900;
+        }
+    }
+}

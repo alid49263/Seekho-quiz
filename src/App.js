@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useSelector } from 'react-redux';
+import './App.scss';
+import QuizBoard from './Components/QuizBoard';
+import Sidebar from './Components/Sidebar';
+import SubmittedScreen from './Components/SubmittedScreen';
+import { isSubmitted } from './Slices/quizSlice';
 
 function App() {
+  const submitted = useSelector(isSubmitted)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!submitted ? <>
+        <div className='sidebar'><Sidebar /></div>
+        <div className='content'><QuizBoard /></div>
+      </>:<SubmittedScreen />}
+
     </div>
   );
 }

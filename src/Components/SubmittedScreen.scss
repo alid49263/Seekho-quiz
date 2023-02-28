@@ -1,0 +1,23 @@
+.submittedScreen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    .heading{
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .scorePoints{
+        font-weight: 500;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .verifiedlogo{
+        width: 75px;
+        margin-bottom: 40px;
+    }
+}
